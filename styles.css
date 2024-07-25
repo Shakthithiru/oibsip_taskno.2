@@ -1,0 +1,238 @@
+/* styles.css */
+
+/* Basic resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Dark Theme Colors */
+:root {
+    --primary-color: #0d1117; /* Dark background */
+    --secondary-color: #161b22; /* Slightly lighter dark background */
+    --accent-color: hwb(19 10% 6%); /* Blue accent */
+    --text-color: #c9d1d9; /* Light text color */
+    --muted-text-color: #8b949e; /* Muted text color */
+    --hover-color: #hwb(19 10% 6%); /* Hover color */
+}
+
+/* General body styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background-color: var(--secondary-color);
+    padding: 1rem 2rem;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+}
+
+header ul li {
+    margin-left: 1.5rem;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 400;
+    transition: color 0.3s;
+}
+
+header ul li a:hover {
+    color: var(--hover-color);
+}
+
+/* Hero Section Styling */
+.hero {
+    height:80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.hero .btn {
+    padding: 0.75rem 2rem;
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: var(--hover-color);
+}
+
+/* About Section Styling */
+#about {
+    padding: 4rem 2rem;
+    background-color: var(--primary-color);
+}
+
+#about h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-container .introduction,
+.about-container .skills-overview {
+    max-width: 600px;
+    margin-bottom: 2rem;
+}
+
+.about-container h3 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.about-container p,
+.about-container ul {
+    font-size: 1rem;
+    color: var(--muted-text-color);
+}
+
+.about-container ul {
+    list-style: disc;
+    margin-left: 1.5rem;
+}
+
+/* Portfolio Section Styling */
+.portfolio-section {
+    padding: 4rem 2rem;
+    background-color: var(--secondary-color);
+}
+
+.portfolio-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.portfolio-item {
+    background-color: var(--primary-color);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.portfolio-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.portfolio-item p {
+    font-size: 1rem;
+    color: var(--muted-text-color);
+    margin-bottom: 1.5rem;
+}
+
+.portfolio-item .view-project {
+    text-decoration: none;
+    color: var(--accent-color);
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.portfolio-item .view-project:hover {
+    color: var(--hover-color);
+}
+
+.portfolio-item:hover {
+    transform: translateY(-10px);
+}
+
+/* Contact Section Styling */
+#contact {
+    padding: 4rem 2rem;
+    background-color: var(--primary-color);
+}
+
+#contact h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-info {
+    max-width: 600px;
+    width: 100%;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.contact-item i {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    color: var(--accent-color);
+}
+
+.contact-item a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.contact-item a:hover {
+    color: var(--hover-color);
+}
